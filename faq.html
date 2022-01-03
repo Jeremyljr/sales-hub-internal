@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Wed Dec 08 2021 09:37:58 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Mon Jan 03 2022 16:27:08 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="619cb529b263b675d65ca562" data-wf-site="6193d510050a8048c8b4f1fb">
 <head>
   <meta charset="utf-8">
@@ -17,6 +17,14 @@
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
   <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
+  <style>
+.hack20-sub-bullet {
+  margin-left: 30px;
+}
+.hack20-sub-bullet-2 {
+  margin-left: 45px;
+}
+</style>
   <style>
 .text-field {
   margin-bottom: 0px;
@@ -36,7 +44,6 @@
   border-left-width: 0px;
   border-left-color: black;
   background-color: transparent;
-  color: @swatch_c3751741;
 }
 </style>
 </head>
@@ -50,9 +57,6 @@
           </div>
           <nav role="navigation" class="navmenu w-nav-menu">
             <div class="navlinkcontainer">
-              <a href="faq.html" aria-current="page" class="navlinks bodyboldcopy w-nav-link w--current">FAQ</a>
-            </div>
-            <div class="navlinkcontainer">
               <div data-hover="true" data-delay="0" class="navlinks w-dropdown">
                 <div class="w-dropdown-toggle">
                   <div class="icon w-icon-dropdown-toggle"></div>
@@ -61,9 +65,9 @@
                 <nav class="dropdownlist w-dropdown-list">
                   <div class="dropdowncontainer">
                     <div data-hover="true" data-delay="0" class="navlinks w-dropdown">
-                      <div class="w-dropdown-toggle">
+                      <div class="navdropdowncontainer w-dropdown-toggle">
                         <div class="icon navinnerdropdown w-icon-dropdown-toggle"></div>
-                        <a href="commercial-operations.html" class="navlinks smallcopy">Commercial Operations</a>
+                        <a href="commercial-operations.html" class="navlinks smallcopy">Commercial Operations           </a>
                       </div>
                       <nav class="navinnerdropdownlist w-dropdown-list">
                         <div class="dropdowncontainer navinnerdropdowncontainer">
@@ -77,14 +81,45 @@
                         </div>
                       </nav>
                     </div>
-                    <a href="#" class="navlinks smallcopy w-dropdown-link">Direct Marketing</a>
-                    <a href="#" class="navlinks smallcopy w-dropdown-link">Government Affairs </a>
+                    <a href="direct-marketing.html" class="navlinks smallcopy w-dropdown-link">Direct Marketing</a>
+                    <a href="government-affairs.html" class="navlinks smallcopy w-dropdown-link">Government Affairs </a>
+                    <div data-hover="true" data-delay="0" class="navlinks w-dropdown">
+                      <div class="navdropdowncontainer w-dropdown-toggle">
+                        <div class="icon navinnerdropdown w-icon-dropdown-toggle"></div>
+                        <a href="legal.html" class="navlinks smallcopy">Legal / Commercial Contracts</a>
+                      </div>
+                      <nav class="navinnerdropdownlist w-dropdown-list">
+                        <div class="dropdowncontainer navinnerdropdowncontainer">
+                          <a href="legal-2/contracts.html" class="navlinks smallcopy w-dropdown-link">Contracts</a>
+                          <a href="legal-2/legal-team.html" class="navlinks smallcopy w-dropdown-link">Legal</a>
+                        </div>
+                      </nav>
+                    </div>
                     <a href="#" class="navlinks smallcopy w-dropdown-link">Market Access</a>
                     <a href="medical-affairs.html" class="navlinks smallcopy w-dropdown-link">Medical Affairs</a>
-                    <a href="#" class="navlinks smallcopy w-dropdown-link">Sales</a>
+                    <div data-hover="true" data-delay="0" class="navlinks w-dropdown">
+                      <div class="navdropdowncontainer w-dropdown-toggle">
+                        <div class="icon navinnerdropdown w-icon-dropdown-toggle"></div>
+                        <a href="sales.html" class="navlinks smallcopy dropdownnav">Sales                                           </a>
+                      </div>
+                      <nav class="navinnerdropdownlist w-dropdown-list">
+                        <div class="dropdowncontainer navinnerdropdowncontainer">
+                          <a href="sales/north.html" class="navlinks smallcopy w-dropdown-link">North</a>
+                          <a href="sales/west.html" class="navlinks smallcopy w-dropdown-link">West</a>
+                          <a href="sales/central.html" class="navlinks smallcopy w-dropdown-link">Central</a>
+                          <a href="sales/emerging-markets.html" class="navlinks smallcopy w-dropdown-link">Emerging Markets</a>
+                          <a href="sales/clinical.html" class="navlinks smallcopy w-dropdown-link">Clinical</a>
+                          <a href="sales/technology-specialists.html" class="navlinks smallcopy w-dropdown-link">Technology Specialists</a>
+                          <a href="sales/inside-sales.html" class="navlinks smallcopy w-dropdown-link">Inside Sales</a>
+                        </div>
+                      </nav>
+                    </div>
                   </div>
                 </nav>
               </div>
+            </div>
+            <div class="navlinkcontainer">
+              <a href="faq.html" aria-current="page" class="navlinks bodyboldcopy w-nav-link w--current">FAQ</a>
             </div>
             <div class="navlinkcontainer">
               <a href="sales-vision.html" class="navlinks bodyboldcopy w-nav-link">Sales Vision</a>
@@ -102,18 +137,8 @@
           <h1 class="header1 faqtitle">How can we help?</h1>
         </div>
         <div class="faqsearchcontainer">
-          <div class="faqsearchbar"><img src="images/subtle_textSearch.svg" loading="lazy" width="16" alt="" class="image-2">
-            <div class="form-block faqformblock w-form">
-              <form id="wf-form-FAQ-Form" name="wf-form-FAQ-Form" data-name="FAQ Form" class="faqfrom">
-                <div class="searchboxembed w-embed"><input type="text" class="text-field faqtextfield w-input" id="searchBar" onkeyup="search_animal()" placeholder="Search FAQ"></div>
-              </form>
-              <div class="w-form-done">
-                <div>Thank you! Your submission has been received!</div>
-              </div>
-              <div class="w-form-fail">
-                <div>Oops! Something went wrong while submitting the form.</div>
-              </div>
-            </div>
+          <div class="faqsearchbar"><img src="images/subtle_textSearch.svg" loading="lazy" width="16" alt="" class="searchicon">
+            <div class="searchboxembed w-embed"><input type="text" class="text-field faqtextfield w-input" id="searchBar" onkeyup="search_animal()" placeholder="Search FAQ"></div>
           </div>
         </div>
       </div>
@@ -378,6 +403,356 @@
           </nav>
         </div>
       </div>
+      <div class="faqquestioncontainer">
+        <div data-hover="false" data-delay="0" data-w-id="34a4253e-230b-db7b-f763-522fc9c5036c" style="height:65px" class="dropdown questiondropdown w-dropdown">
+          <div class="dropdown-toggle questiontitle w-dropdown-toggle">
+            <div class="header3 faqquestiontitle">Which dashboard can I view my variance to forecast in?</div><img src="images/system-icon-deny-remove-x.svg" loading="lazy" width="16" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" class="image-3 plusicon">
+          </div>
+          <nav class="dropdown-list-2 dropdownanswers w-dropdown-list">
+            <div class="rich-text-block-2 faqanswers w-richtext">
+              <h3><strong>Rollup Overview</strong></h3>
+              <p>360 Degree Overview tab in the Rollup Overview filtering options to show forecast across multiple levels. </p>
+              <h3><strong>Commercial 360 </strong></h3>
+              <p>Sales Performance tab displays summarized forecast vs rollup at the territory and material levels (and links to Rollup Overview). </p>
+              <h3><strong>Pipeline Health</strong></h3>
+              <p>Pipeline Health Outlook tab in Pipeline Health can also show the rollup vs forecast across instruments, consumables, and service/other.</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="faqquestioncontainer">
+        <div data-hover="false" data-delay="0" data-w-id="70e90509-04d4-2328-a803-8fcd981ca587" style="height:65px" class="dropdown questiondropdown w-dropdown">
+          <div class="dropdown-toggle questiontitle w-dropdown-toggle">
+            <div class="header3 faqquestiontitle">Which dashboard can I use to see my backlog due?</div><img src="images/system-icon-deny-remove-x.svg" loading="lazy" width="16" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" class="image-3 plusicon">
+          </div>
+          <nav class="dropdown-list-2 dropdownanswers w-dropdown-list">
+            <div class="rich-text-block-2 faqanswers w-richtext">
+              <h3>Order Line Details </h3>
+              <p>Order Line Details tab displays all backlog due and associated detail based on selected time frame. </p>
+              <h3>Actual Trend &amp; Pipeline</h3>
+              <p>Quarterly Trend tab also has the capability to display quarterly backlog amount based on product detail and selected timeframe.</p>
+              <h3>Deep Dive</h3>
+              <p>In Table EXTRA tab, review backlog by changing the Status filter to ‘BacklogDueDetails’.</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="faqquestioncontainer">
+        <div data-hover="false" data-delay="0" data-w-id="2870de04-b373-888b-65bc-51ea5ae11f18" style="height:65px" class="dropdown questiondropdown w-dropdown">
+          <div class="dropdown-toggle questiontitle w-dropdown-toggle">
+            <div class="header3 faqquestiontitle">Which dashboard will show if I have enough in upside opportunities?</div><img src="images/system-icon-deny-remove-x.svg" loading="lazy" width="16" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" class="image-3 plusicon">
+          </div>
+          <nav class="dropdown-list-2 dropdownanswers w-dropdown-list">
+            <div class="rich-text-block-2 faqanswers w-richtext">
+              <h3>Rollup Overview</h3>
+              <p>The Opportunity Summary tab displays upside coverage and top upside opportunity details.</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="faqquestioncontainer">
+        <div data-hover="false" data-delay="0" data-w-id="119c3a75-f08c-82c0-dc0f-65d333afb821" style="height:65px" class="dropdown questiondropdown w-dropdown">
+          <div class="dropdown-toggle questiontitle w-dropdown-toggle">
+            <div class="header3 faqquestiontitle">Which dashboard can I use to evaluate my pipeline for the year?</div><img src="images/system-icon-deny-remove-x.svg" loading="lazy" width="16" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" class="image-3 plusicon">
+          </div>
+          <nav class="dropdown-list-2 dropdownanswers w-dropdown-list">
+            <div class="rich-text-block-2 faqanswers w-richtext">
+              <h3>Actual Trend &amp; Pipeline Detail</h3>
+              <p>The Pipeline view tab displays full pipeline breakout across all products for the full year. </p>
+              <h3>Rollup Overview</h3>
+              <p>Opportunity Summary tab shows the pipeline health by territory and product class.</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="faqquestioncontainer">
+        <div data-hover="false" data-delay="0" data-w-id="cc78cc8e-3632-8de7-a0e5-b445b0168153" style="height:65px" class="dropdown questiondropdown w-dropdown">
+          <div class="dropdown-toggle questiontitle w-dropdown-toggle">
+            <div class="header3 faqquestiontitle">Which dashboard can enable me to track an order&#x27;s shipping schedule?</div><img src="images/system-icon-deny-remove-x.svg" loading="lazy" width="16" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" class="image-3 plusicon">
+          </div>
+          <nav class="dropdown-list-2 dropdownanswers w-dropdown-list">
+            <div class="rich-text-block-2 faqanswers w-richtext">
+              <h3>Order Line Details</h3>
+              <p>Order Line Details tab displays the full shipping schedule for selected order at line level</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="faqquestioncontainer">
+        <div data-hover="false" data-delay="0" data-w-id="015d2bbd-ac4b-b7b0-ce52-1ddf4450e403" style="height:65px" class="dropdown questiondropdown w-dropdown">
+          <div class="dropdown-toggle questiontitle w-dropdown-toggle">
+            <div class="header3 faqquestiontitle">How can I view the average territory discount for consumables in a dashboard?</div><img src="images/system-icon-deny-remove-x.svg" loading="lazy" width="16" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" class="image-3 plusicon">
+          </div>
+          <nav class="dropdown-list-2 dropdownanswers w-dropdown-list">
+            <div class="rich-text-block-2 faqanswers w-richtext">
+              <h3>Discount Overview </h3>
+              <p>Discount Summary tab displays the discount by material class within your territory coverage. </p>
+              <h3>Commercial 360</h3>
+              <p>Sales Performance tab in Commercial 360 also offers a summary of discounts by product class and top discounted products, comparing CYTD vs PYTD.</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="faqquestioncontainer">
+        <div data-hover="false" data-delay="0" data-w-id="8bfa9964-e6ed-b61f-2354-0ad278cc8b1d" style="height:65px" class="dropdown questiondropdown w-dropdown">
+          <div class="dropdown-toggle questiontitle w-dropdown-toggle">
+            <div class="header3 faqquestiontitle">How do I view which orders are on hold and for what reason in a dashboard?</div><img src="images/system-icon-deny-remove-x.svg" loading="lazy" width="16" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" class="image-3 plusicon">
+          </div>
+          <nav class="dropdown-list-2 dropdownanswers w-dropdown-list">
+            <div class="rich-text-block-2 faqanswers w-richtext">
+              <h3>Order Line Details</h3>
+              <p>Order Line Summary tab displays all orders that are past due or on hold, with associated line level details.</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="faqquestioncontainer">
+        <div data-hover="false" data-delay="0" data-w-id="5e49d4e0-6533-1775-1e94-9cc8e310052b" style="height:65px" class="dropdown questiondropdown w-dropdown">
+          <div class="dropdown-toggle questiontitle w-dropdown-toggle">
+            <div class="header3 faqquestiontitle">Which dashboard can show my rollup to forecast for the previous quarter?</div><img src="images/system-icon-deny-remove-x.svg" loading="lazy" width="16" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" class="image-3 plusicon">
+          </div>
+          <nav class="dropdown-list-2 dropdownanswers w-dropdown-list">
+            <div class="rich-text-block-2 faqanswers w-richtext">
+              <h3>Rollup Overview</h3>
+              <p>360 Degree Overview tab shows the territory rollup vs forecast for the previous quarter, as well as the breakdown by rollup quantity and value for instruments and consumables.</p>
+              <h3>Pipeline Health </h3>
+              <p>Pipeline Health Outlook tab displays the rollup vs forecast for the <strong>current </strong>quarter, as well as the rollup and forecast for the <strong>next 3 quarters.</strong></p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="faqquestioncontainer">
+        <div data-hover="false" data-delay="0" data-w-id="17dbda19-2643-fa03-8aed-c8cf086e4fd0" style="height:65px" class="dropdown questiondropdown w-dropdown">
+          <div class="dropdown-toggle questiontitle w-dropdown-toggle">
+            <div class="header3 faqquestiontitle">How do I view in a dashboard my territories&#x27; performance relative to each other?</div><img src="images/system-icon-deny-remove-x.svg" loading="lazy" width="16" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" class="image-3 plusicon">
+          </div>
+          <nav class="dropdown-list-2 dropdownanswers w-dropdown-list">
+            <div class="rich-text-block-2 faqanswers w-richtext">
+              <h3>Actual Trend &amp; Pipeline Detail</h3>
+              <p>Quarterly Trend tab displays a territory breakdown of historical actuals to compare performance across products, market segment, customers and more.</p>
+              <h3>Deep Dive</h3>
+              <p>Table EXTRA tab offers a broad range of filters and allows to compare performance for territories, product hierarchy levels, accounts and more, down to the material description level. </p>
+              <p>View the largest deltas and compare growth and decline visually in the Home tab.</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="faqquestioncontainer">
+        <div data-hover="false" data-delay="0" data-w-id="e4c4fafa-efd7-6d62-e616-ab4337f8dd2e" style="height:65px" class="dropdown questiondropdown w-dropdown">
+          <div class="dropdown-toggle questiontitle w-dropdown-toggle">
+            <div class="header3 faqquestiontitle">Which dashboard can I use to view information related to my accounts?</div><img src="images/system-icon-deny-remove-x.svg" loading="lazy" width="16" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" class="image-3 plusicon">
+          </div>
+          <nav class="dropdown-list-2 dropdownanswers w-dropdown-list">
+            <div class="rich-text-block-2 faqanswers w-richtext">
+              <h3>Account 360</h3>
+              <p>Account Overview tab displays the rolling 4 quarter shipments, opportunities, backlog, active install base and more for selected accounts. </p>
+              <h3>DeepDive</h3>
+              <p>DeepDive tab has the same analytics capabilities for accounts, allows to drill down into the shipments and backlog, however no options to view related opportunities or active install base. </p>
+              <h3>Growth Overview</h3>
+              <p>Growth Overview tab displays top level summary data on the accounts with the largest growth, the largest decline, as well as their respective product and territory hierarchies (including market sector)</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="faqquestioncontainer">
+        <div data-hover="false" data-delay="0" data-w-id="82f6bb81-adb5-2e73-84f5-ab85ee2389b9" style="height:65px" class="dropdown questiondropdown w-dropdown">
+          <div class="dropdown-toggle questiontitle w-dropdown-toggle">
+            <div class="header3 faqquestiontitle">Which dashboard can help find new grants in my territory?</div><img src="images/system-icon-deny-remove-x.svg" loading="lazy" width="16" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" class="image-3 plusicon">
+          </div>
+          <nav class="dropdown-list-2 dropdownanswers w-dropdown-list">
+            <div class="rich-text-block-2 faqanswers w-richtext">
+              <h3>Grants Dashboard</h3>
+              <p>Subscription view displays all new grants and related information, such as priority score, in one’s territory.</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="faqquestioncontainer">
+        <div data-hover="false" data-delay="0" data-w-id="a9e8596f-b14c-c0b8-b8ba-3480a7b242ce" style="height:65px" class="dropdown questiondropdown w-dropdown">
+          <div class="dropdown-toggle questiontitle w-dropdown-toggle">
+            <div class="header3 faqquestiontitle">How do I view in a dashboard what orders have been placed in the last 7 days?</div><img src="images/system-icon-deny-remove-x.svg" loading="lazy" width="16" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" class="image-3 plusicon">
+          </div>
+          <nav class="dropdown-list-2 dropdownanswers w-dropdown-list">
+            <div class="rich-text-block-2 faqanswers w-richtext">
+              <h3>Order Line Details</h3>
+              <p>Order Line Details tab displays all orders placed and line level detail based on selected time frame.</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="faqquestioncontainer">
+        <div data-hover="false" data-delay="0" data-w-id="5f780cbf-d1a2-5df9-c9e2-7a41d037a45c" style="height:65px" class="dropdown questiondropdown w-dropdown">
+          <div class="dropdown-toggle questiontitle w-dropdown-toggle">
+            <div class="header3 faqquestiontitle">Which dashboard can show me the top performing clinical territory?</div><img src="images/system-icon-deny-remove-x.svg" loading="lazy" width="16" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" class="image-3 plusicon">
+          </div>
+          <nav class="dropdown-list-2 dropdownanswers w-dropdown-list">
+            <div class="rich-text-block-2 faqanswers w-richtext">
+              <h3>Actual Trend &amp; Pipeline Detail</h3>
+              <p>Quarterly Trend tab displays a territory breakdown of historical actuals to compare territory performance within the clinical space</p>
+              <h3>DeepDive</h3>
+              <p>Table EXTRA tab in DeepDive can also display a territory breakdown by clinical type and compare performance over years.</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="faqquestioncontainer">
+        <div data-hover="false" data-delay="0" data-w-id="7824f96b-2029-7566-b367-f019c9e0d48a" style="height:65px" class="dropdown questiondropdown w-dropdown">
+          <div class="dropdown-toggle questiontitle w-dropdown-toggle">
+            <div class="header3 faqquestiontitle">Which dashboard can show me the products that are driving the clinical market?</div><img src="images/system-icon-deny-remove-x.svg" loading="lazy" width="16" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" class="image-3 plusicon">
+          </div>
+          <nav class="dropdown-list-2 dropdownanswers w-dropdown-list">
+            <div class="rich-text-block-2 faqanswers w-richtext">
+              <h3>Actual Trend &amp; Pipeline Detail</h3>
+              <p>Pipeline view displays full pipeline breakout across all products for the full year within the clinical space</p>
+              <h3>DeepDive</h3>
+              <p>Table EXTRA tab also allows filtering down data by clinical type, as well as adding it as a dimension in the table, showing a full breakdown of product and territory hierarchies by clinical type.</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="faqquestioncontainer">
+        <div data-hover="false" data-delay="0" data-w-id="a33a3851-0b78-3e8d-044d-c87149a81b7f" style="height:65px" class="dropdown questiondropdown w-dropdown">
+          <div class="dropdown-toggle questiontitle w-dropdown-toggle">
+            <div class="header3 faqquestiontitle">How can I see which customers are driving my clinical pipeline in a dashboard?</div><img src="images/system-icon-deny-remove-x.svg" loading="lazy" width="16" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" class="image-3 plusicon">
+          </div>
+          <nav class="dropdown-list-2 dropdownanswers w-dropdown-list">
+            <div class="rich-text-block-2 faqanswers w-richtext">
+              <h3>Actual Trend &amp; Pipeline Detail</h3>
+              <p>Pipeline view displays a customer breakdown of full year pipeline within the clinical space</p>
+              <h3>DeepDive</h3>
+              <p>Table EXTRA tab also displays a breakdown of accounts, with the ability to filter to the desired product portfolio (and to also display the columns by the same data) in the clinical space.</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="faqquestioncontainer">
+        <div data-hover="false" data-delay="0" data-w-id="b21b2d7f-e0fc-abf7-d233-d77a5de89927" style="height:65px" class="dropdown questiondropdown w-dropdown">
+          <div class="dropdown-toggle questiontitle w-dropdown-toggle">
+            <div class="header3 faqquestiontitle">Which dashboard can I use to get a complete picture of my customer base and territory?</div><img src="images/system-icon-deny-remove-x.svg" loading="lazy" width="16" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" class="image-3 plusicon">
+          </div>
+          <nav class="dropdown-list-2 dropdownanswers w-dropdown-list">
+            <div class="rich-text-block-2 faqanswers w-richtext">
+              <h3>DeepDive</h3>
+              <p>Table Extra view allows multi filter selection in order to understand which customers are driving revenue in a particular territory, as well as multiple dimensions showing specific factors that have changed Year on Year.</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="faqquestioncontainer">
+        <div data-hover="false" data-delay="0" data-w-id="9eda4f61-34d3-e683-4ba9-0d990dddca03" style="height:65px" class="dropdown questiondropdown w-dropdown">
+          <div class="dropdown-toggle questiontitle w-dropdown-toggle">
+            <div class="header3 faqquestiontitle">How do I see what the benchtop pull through is for a given account on a dashboard?</div><img src="images/system-icon-deny-remove-x.svg" loading="lazy" width="16" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" class="image-3 plusicon">
+          </div>
+          <nav class="dropdown-list-2 dropdownanswers w-dropdown-list">
+            <div class="rich-text-block-2 faqanswers w-richtext">
+              <h3>Pull Through</h3>
+              <p>Pull Through Trends tab displays the account level pull through by platform at a selected institution.</p>
+              <h3>Account 360</h3>
+              <p>Customer pull through per individual account can also be displayed in the Account 360 dashboard (Pull Through tab).</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="faqquestioncontainer">
+        <div data-hover="false" data-delay="0" data-w-id="6b71f925-db13-deaf-508a-ec05d435e4ff" style="height:65px" class="dropdown questiondropdown w-dropdown">
+          <div class="dropdown-toggle questiontitle w-dropdown-toggle">
+            <div class="header3 faqquestiontitle">Which dashboard can provide details of my non-compliant opportunities?</div><img src="images/system-icon-deny-remove-x.svg" loading="lazy" width="16" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" class="image-3 plusicon">
+          </div>
+          <nav class="dropdown-list-2 dropdownanswers w-dropdown-list">
+            <div class="rich-text-block-2 faqanswers w-richtext">
+              <h3>Rollup Overview</h3>
+              <p>Non-Compliant Opportunities tab displays all non-compliant open opportunity information along with the reason for non-compliance.</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="faqquestioncontainer">
+        <div data-hover="false" data-delay="0" data-w-id="c467db47-85cf-c2a4-cb4a-9d488a9392a6" style="height:65px" class="dropdown questiondropdown w-dropdown">
+          <div class="dropdown-toggle questiontitle w-dropdown-toggle">
+            <div class="header3 faqquestiontitle">Which dashboard do I use to see my QoQ library prep growth?</div><img src="images/system-icon-deny-remove-x.svg" loading="lazy" width="16" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" class="image-3 plusicon">
+          </div>
+          <nav class="dropdown-list-2 dropdownanswers w-dropdown-list">
+            <div class="rich-text-block-2 faqanswers w-richtext">
+              <h3>Actual Trend &amp; Pipeline Detail</h3>
+              <p>Quarterly Trend tab displays the quarterly trend and associated growth across BSR-specific products, including Library Prep (filter by Product Category). </p>
+              <h3>DeepDive</h3>
+              <p>Another way to view this data is in DeepDive dashboard, where you can view the data in Table EXTRA or Library Prep tabs.</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="faqquestioncontainer">
+        <div data-hover="false" data-delay="0" data-w-id="ea8737d1-15f5-f4ef-308e-65ea41942fbf" style="height:65px" class="dropdown questiondropdown w-dropdown">
+          <div class="dropdown-toggle questiontitle w-dropdown-toggle">
+            <div class="header3 faqquestiontitle">Where in a dashboard can I view my customer&#x27;s active install base?</div><img src="images/system-icon-deny-remove-x.svg" loading="lazy" width="16" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" class="image-3 plusicon">
+          </div>
+          <nav class="dropdown-list-2 dropdownanswers w-dropdown-list">
+            <div class="rich-text-block-2 faqanswers w-richtext">
+              <h3>Account 360</h3>
+              <p>Installed Products tab displays the breakdown of install base across platforms at a selected institution, as well as the status of the installed product. </p>
+              <h3>Pull Through </h3>
+              <p>Pull Through by Customer tab displays the Install Base Customer Classification, which can be seen for each individual customer.</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="faqquestioncontainer">
+        <div data-hover="false" data-delay="0" data-w-id="5085adef-7fab-447a-a7e6-7320ddf4acad" style="height:65px" class="dropdown questiondropdown w-dropdown">
+          <div class="dropdown-toggle questiontitle w-dropdown-toggle">
+            <div class="header3 faqquestiontitle">Which dashboard can help me determine where my current quarter opportunities stand?</div><img src="images/system-icon-deny-remove-x.svg" loading="lazy" width="16" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" class="image-3 plusicon">
+          </div>
+          <nav class="dropdown-list-2 dropdownanswers w-dropdown-list">
+            <div class="rich-text-block-2 faqanswers w-richtext">
+              <h3>Rollup Overview</h3>
+              <p>Opportunity Summary tab in Rollup Overview displays a breakdown of open opportunities across sales stages and forecast categories.</p>
+              <h3>Rollup Movement</h3>
+              <p>In Rollup Movement Summary tab, identify the current quarter opportunities driving the change in rollup and view a waterfall display of the opportunity stage group. </p>
+              <p>Clicking on each group redirects to the Rollup Movement Detail tab, which displays the opportunities and order details that make up the change.</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="faqquestioncontainer">
+        <div data-hover="false" data-delay="0" data-w-id="9e4c41ca-e15d-8822-217f-e952fb7372f9" style="height:65px" class="dropdown questiondropdown w-dropdown">
+          <div class="dropdown-toggle questiontitle w-dropdown-toggle">
+            <div class="header3 faqquestiontitle">How do I visualize which tier 3 customer&#x27;s pull through has dropped off on a dashboard?</div><img src="images/system-icon-deny-remove-x.svg" loading="lazy" width="16" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" class="image-3 plusicon">
+          </div>
+          <nav class="dropdown-list-2 dropdownanswers w-dropdown-list">
+            <div class="rich-text-block-2 faqanswers w-richtext">
+              <h3>Pull Through</h3>
+              <p>Pull Through Trends tab ranks customers by core consumables spend and displays quarterly pull through by platform.</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="faqquestioncontainer">
+        <div data-hover="false" data-delay="0" data-w-id="634c88e9-ba6b-217c-ab39-5b2af1f39150" style="height:65px" class="dropdown questiondropdown w-dropdown">
+          <div class="dropdown-toggle questiontitle w-dropdown-toggle">
+            <div class="header3 faqquestiontitle">How do I see which accounts have the highest or lowest impact on growth in a dashboard?</div><img src="images/system-icon-deny-remove-x.svg" loading="lazy" width="16" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" class="image-3 plusicon">
+          </div>
+          <nav class="dropdown-list-2 dropdownanswers w-dropdown-list">
+            <div class="rich-text-block-2 faqanswers w-richtext">
+              <h3>Growth Overview</h3>
+              <p>Impact of Top &amp; Bottom Accounts on Growth tab displays the comparison of overall growth to the underlying growth excluding top accounts &amp; bottom accounts associated with YoY growth.</p>
+              <h3>DeepDive</h3>
+              <p>Table Extra tab is also a good place to start when wanting to look at customer trends, accounts that have dropped or grown YoY, as well as analysing the contributing factors in depth.</p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="faqquestioncontainer">
+        <div data-hover="false" data-delay="0" data-w-id="269c0120-d589-73a4-693c-1911b4278707" style="height:65px" class="dropdown questiondropdown w-dropdown">
+          <div class="dropdown-toggle questiontitle w-dropdown-toggle">
+            <div class="header3 faqquestiontitle">Which dashboard can enable me to monitor my territory&#x27;s MBO metrics for the current quarter?</div><img src="images/system-icon-deny-remove-x.svg" loading="lazy" width="16" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(45deg) skew(0, 0)" alt="" class="image-3 plusicon">
+          </div>
+          <nav class="dropdown-list-2 dropdownanswers w-dropdown-list">
+            <div class="rich-text-block-2 faqanswers w-richtext">
+              <h3>MBO Dashboard</h3>
+              <p>TAM MBO Dashboard tab displays summary data for all the agreed metrics and the % of the target that has been reached for each metric by territory.</p>
+            </div>
+          </nav>
+        </div>
+      </div>
     </div>
   </div>
   <div class="footersection spacersection wf-section">
@@ -390,7 +765,7 @@
       </div>
     </div>
   </div>
-  <a href="#" style="opacity:0" class="faqtotopbutton w-inline-block"><img src="images/arrow-down-sign-to-navigate.png" loading="lazy" width="25" alt="" class="totopimage"></a>
+  <a href="#faqPageHeader" style="opacity:0" class="faqtotopbutton w-inline-block"><img src="images/arrow-down-sign-to-navigate.png" loading="lazy" width="25" alt="" class="totopimage"></a>
   <a href="mailto:salesops_emea@illumina.com?subject=%7BThis%20could%20be%20any%20subject%20title%7D" class="contactbutton w-inline-block">
     <div class="header3 contactbuttontext">Contact</div>
   </a>
@@ -398,19 +773,41 @@
   <script src="js/webflow.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
   <script>
-function search_animal() {
-    let input = document.getElementById('searchBar').value
-    input=input.toLowerCase();
-    let x = document.getElementsByClassName('faqquestioncontainer');
-    for (i = 0; i < x.length; i++) { 
-        if (!x[i].innerHTML.toLowerCase().includes(input)) {
-            x[i].style.display="none";
-        }
-        else {
-            x[i].style.display="block";                 
-        }
+$(document).ready(function() {
+  const listItems = $('li');
+  listItems.each(function(index, item){
+    if($(item).text().startsWith('~~')){
+      indentText(this, 'hack20-sub-bullet-2');
+    }	
+    else if($(item).text().startsWith('~')){
+      indentText(this, 'hack20-sub-bullet');
+    }	
+  });
+  function indentText(li, className){
+    $(li).addClass(className);
+    const reformatedText = $(li).html().replace(/~+/g,'');
+    $(li).html(reformatedText);
+  }
+});
+</script>
+  <script>
+  function search_animal() {
+    //get input and contents in container and puts each word in an array
+    var input = document.getElementById('searchBar').value.toLowerCase()
+    var content = document.getElementsByClassName('faqquestioncontainer')
+    inputSplit = input.split(" ");
+    for (i=0; i<content.length; i++){
+      count = 0 
+      while(content[i].innerText.toLowerCase().includes(inputSplit[count]) && count < inputSplit.length){
+        count++ 
+      }
+      if (count == inputSplit.length){
+        content[i].style.display = "block"
+      } else {
+        content[i].style.display = "none";
+      }
     }
-};
+	};
 </script>
 </body>
 </html>
