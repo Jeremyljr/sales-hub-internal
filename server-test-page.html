@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Tue Jan 04 2022 11:49:14 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Mon Jan 31 2022 13:09:58 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="61b07c9ebff908bae10f764f" data-wf-site="6193d510050a8048c8b4f1fb">
 <head>
   <meta charset="utf-8">
@@ -10,13 +10,16 @@
   <meta content="Webflow" name="generator">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
-  <link href="css/emea-saleshub.webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/developer-emea-saleshub.webflow.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
   <script type="text/javascript">WebFont.load({  google: {    families: ["Inter:100,200,300,regular,500,600,700,800,900"]  }});</script>
   <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <style>
 .hack20-sub-bullet {
   margin-left: 30px;
@@ -25,6 +28,14 @@
   margin-left: 45px;
 }
 </style>
+  <!--  Global site tag (gtag.js) - Google Analytics  -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ESEB57T4LW"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ESEB57T4LW');
+</script>
 </head>
 <body>
   <h1>Hello world</h1>
@@ -46,6 +57,16 @@ $(document).ready(function() {
     $(li).addClass(className);
     const reformatedText = $(li).html().replace(/~+/g,'');
     $(li).html(reformatedText);
+  }
+});
+</script>
+  <script>
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 500) {
+    $('.totopbutton').fadeIn();
+  } else {
+    $('.totopbutton').fadeOut();
   }
 });
 </script>
