@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Mon Jan 31 2022 13:09:58 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Thu Feb 03 2022 14:14:47 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="61e55516783deb4cbf3cb111" data-wf-site="6193d510050a8048c8b4f1fb">
 <head>
   <meta charset="utf-8">
@@ -37,6 +37,11 @@
   gtag('config', 'G-ESEB57T4LW');
 </script>
   <link rel="stylesheet" href="./image-maps/image-map-pro.min.css">
+  <style>
+.imp-shape{
+  cursor: default !important;
+}
+</style>
 </head>
 <body>
   <div class="pageheader">
@@ -72,6 +77,7 @@
                         </div>
                       </nav>
                     </div>
+                    <a href="genomics-scale.html" class="navlinks smallcopy w-dropdown-link">Genomics @ Scale</a>
                     <a href="government-affairs.html" class="navlinks smallcopy w-dropdown-link">Government Affairs </a>
                     <div data-hover="true" data-delay="0" class="navlinks w-dropdown">
                       <div class="navdropdowncontainer w-dropdown-toggle">
@@ -180,6 +186,14 @@
           </div>
           <div class="fs-tabscontent w-tab-content">
             <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active">
+              <div class="w-embed">
+                <style>
+.w-richtext figure.w-richtext-align-fullwidth{
+	position: absolute;
+	z-index: 100;
+}
+</style>
+              </div>
               <h3 class="fsprocess-requiredaccess">Required Access</h3>
               <div class="fs-process-icons-container">
                 <div class="fsprocess-glass">
@@ -204,17 +218,17 @@
                   </a>
                 </div>
               </div>
-              <div class="fs-process-rtb fs-reagentrental w-richtext">
+              <div class="fs-process-rtb w-richtext">
                 <h3>Salesforce</h3>
                 <p>Please create a <a href="#" data-w-id="41cc28ff-f89f-c4a7-35de-bcad89ab0782">Direct Standard – Standard sale</a> Opportunity in Salesforce with the naming convention:<br></p>
-                <figure style="max-width:937px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                <figure style="max-width:937pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                   <div><img src="images/Reagent-rental2.png" loading="lazy" style="display:none" data-w-id="e91243b7-4eed-2603-da3c-68ed417927d3" alt=""></div>
                 </figure>
-                <p><strong>&quot;System type_ ReagentRental_Account_Customer name&quot;</strong></p>
+                <p><strong>&quot;System type_ ReagentRental_Account_Customer name&quot;<br>‍</strong></p>
                 <h3>vFast</h3>
-                <p>Please go to the Virtual Financial Assistant (vFast) to model reagent rental proposals. For more information on how to use the tool, explore <a href="#">these tutorials</a> or contact <a href="mailto:financialservices@illumina.com">financialservices@illumina.com</a> <br><br>For <strong>agreements higher than $1M</strong>, it is recommended to include your Finance Business Partner early in the process to advise you on the financial health of the deal.<br>Any proposal with a <strong>pre-discount value higher than $5M</strong> will need to go through the Big Deal Review process. In this case, the Finance Business Partner will help you to compile the Big Deal Review package, present it to top management and obtain the necessary approvals.</p>
+                <p>Please go to the Virtual Financial Assistant (vFast) to model reagent rental proposals. For more information on how to use the tool, explore <a href="https://sequencingsalescalculator.illumina.com/help">these tutorials</a> or contact <a href="mailto:financialservices@illumina.com">financialservices@illumina.com</a> .<br><br>For <strong>agreements higher than $1M</strong>, it is recommended to include your Finance Business Partner early in the process to advise you on the financial health of the deal.<br>Any proposal with a <strong>pre-discount value higher than $5M</strong> will need to go through the Big Deal Review process. In this case, the Finance Business Partner will help you to compile the Big Deal Review package, present it to top management and obtain the necessary approvals.<br>‍</p>
                 <h3>Quickbase</h3>
-                <p>For each agreement, a record needs to be created in EMEA Capital Support Management System app. This enables visibility of all steps in the process and facilitates obtaining approvals. For more information on how to use the tool, explore this tutorial.<br><br>Editing access is granted to TAMs, Inside Sales and members of the departments Quotes, Contracts and Finance. Read Only access is granted to Sales Specialists.<br><br><em>Note: We only need 1 record in Quickbase per agreement!</em></p>
+                <p>For each agreement, a record needs to be created in <a href="https://illumina.quickbase.com/db/bq8uqs9c7/fce27b94-a199-4d57-bae5-eadcff635b4b?from=myqb">EMEA Capital Support Management System app</a>. This enables visibility of all steps in the process and facilitates obtaining approvals. For more information on how to use the tool, explore <a href="https://illumina.box.com/s/gn3bsz07cx0uepkmn0eqohzk50tq0qvr">this tutorial</a>.<br><br>Editing access is granted to <strong>TAMs</strong>, <strong>Inside Sales</strong> and members of the departments <strong>Quotes</strong>, <strong>Contracts and Finance</strong>. <em>Read Only</em> access is granted to <strong>Sales Specialists</strong>.<br><br><em>Note: We only need 1 record in Quickbase per agreement!<br>‍</em></p>
                 <h3>Roles and Responsibilities</h3>
               </div>
               <div class="fs-process-embed w-embed">
@@ -222,71 +236,110 @@
               </div>
             </div>
             <div data-w-tab="Tab 2" class="w-tab-pane">
+              <h3 class="fsprocess-requiredaccess">Required Access</h3>
+              <div class="fs-process-icons-container">
+                <div class="fsprocess-glass">
+                  <a href="https://illumina.lightning.force.com/lightning/page/home" target="_blank" class="glasscard fsprocessglasscard w-inline-block">
+                    <div class="fsprocessiconcontent"><img src="images/image-16_1.png" loading="lazy" alt="" class="sfftimage">
+                      <div class="bodycopy fsprocessicontitle">Salesforce</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="fsprocess-glass">
+                  <a href="https://illumina.quickbase.com/db/main?a=myqb" target="_blank" class="glasscard fsprocessglasscard w-inline-block">
+                    <div class="fsprocessiconcontent"><img src="images/image-23.png" loading="lazy" alt="" class="sfftimage">
+                      <div class="bodycopy fsprocessicontitle">Quickbase</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
               <div class="fs-process-rtb w-richtext">
-                <h2>Rental Systems</h2>
-                <p>Please create a Direct Standard – Rental Instrument opportunity in salesforce. <br>The naming convention is: <strong>System _ Rental_Account_Customer name</strong></p>
-                <figure style="max-width:811pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                  <div><img loading="lazy" src="images/Rental-Systems.png" alt=""></div>
+                <h3>Salesforce</h3>
+                <p>Please create a <a href="#" data-w-id="f522140a-26e9-368e-6487-ba2b6fe72a54">Direct Standard – Rental Instrument</a> opportunity in Salesforce with the naming convention:<br></p>
+                <figure style="max-width:941pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                  <div><img src="images/Rental-Systems.png" loading="lazy" style="display:none" data-w-id="4c22c9e9-47b5-d7f1-ff80-3bf598bb4f73" alt=""></div>
                 </figure>
-                <p>To model a Rental System proposal, please use our Instrument Rental Calculation Tool <em>(LINK TBC)</em><br>You can contact <a href="mailto:financialservices@illumina.com">financialservices@illumina.com</a> if you have further requirements that are not captured in the calculation tool.</p>
-                <p>‍</p>
-                <p>To track and trace Capital Support Products, EMEA maintains the Quickbase app <a href="https://illumina.quickbase.com/db/bq8uqs9c7/fce27b94-a199-4d57-bae5-eadcff635b4b?from=myqb" target="_blank">EMEA Capital Support Management System</a>. For each agreement, a record needs to be created in the app. This will allow us to track all steps in the process and gain approvals. </p>
-                <p><em>Note: we only need 1 record in Quickbase per agreement!</em></p>
-                <p>Editing access is granted to <strong>TAMs</strong>, <strong>Inside Sales</strong> and members of the departments <strong>Quotes</strong>, <strong>Contracts and Finance</strong>. <em>Read Only</em> access is granted to <strong>Sales Specialists</strong>.</p>
-                <p>Please access <a href="https://illumina.box.com/s/gn3bsz07cx0uepkmn0eqohzk50tq0qvr" target="_blank">here</a> for the guide on how to use our <em>EMEA Capital Support Management System.</em></p>
+                <p><strong>&quot;System type_ Rental_Account_Customer name&quot;<br>‍</strong></p>
+                <h3>Instrument Rental Calculation Tool</h3>
+                <p>Please use our our tool (LINK TBC) to model a Rental System proposal. For more information on how to use the tool you can contact <a href="mailto:financialservices@illumina.com">financialservices@illumina.com</a>.<br>‍</p>
+                <h3>Quickbase</h3>
+                <p>‍<em>‍</em>For each agreement, a record needs to be created in <a href="https://illumina.quickbase.com/db/bq8uqs9c7/fce27b94-a199-4d57-bae5-eadcff635b4b?from=myqb">EMEA Capital Support Management System app</a>. This enables visibility of all steps in the process and facilitates obtaining approvals. For more information on how to use the tool, explore <a href="https://illumina.box.com/s/gn3bsz07cx0uepkmn0eqohzk50tq0qvr">this tutorial</a>.<br><br>Editing access is granted to <strong>TAMs</strong>, <strong>Inside Sales</strong> and members of the departments <strong>Quotes</strong>, <strong>Contracts and Finance</strong>. <em>Read Only</em> access is granted to <strong>Sales Specialists</strong>.<br><br><em>Note: We only need 1 record in Quickbase per agreement!</em></p>
+                <h3>Roles and Responsibilities</h3>
               </div>
               <div class="fs-process-embed w-embed">
                 <div id="FS-rental-system"></div>
               </div>
             </div>
             <div data-w-tab="Tab 3" class="w-tab-pane">
+              <h3 class="fsprocess-requiredaccess">Required Access</h3>
+              <div class="fs-process-icons-container">
+                <div class="fsprocess-glass">
+                  <a href="https://illumina.lightning.force.com/lightning/page/home" target="_blank" class="glasscard fsprocessglasscard w-inline-block">
+                    <div class="fsprocessiconcontent"><img src="images/image-16_1.png" loading="lazy" alt="" class="sfftimage">
+                      <div class="bodycopy fsprocessicontitle">Salesforce</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
               <div class="fs-process-rtb w-richtext">
-                <h2>Instrument Lease</h2>
-                <p><em>Financial solution to rent/lease equipment via external leasing partner. </em></p>
+                <h3>Instrument Lease</h3>
+                <p>Financial solution to rent/lease equipment via external leasing partner.</p>
                 <p>A lease is a contract directly between the customer and the leasing company. Illumina sells the required instrument to the Leasing partner who then rents it out to the end customer. The instrument is shipped directly to the end customer from Illumina.</p>
-                <p>‍</p>
-                <h4>EMEA Leasing Partners:</h4>
-                <p>‍</p>
-                <figure style="max-width:" class="w-richtext-align-center w-richtext-figure-type-image">
-                  <a href="https://www.dllgroup.com/" target="_blank" class="w-inline-block">
-                    <div><img loading="lazy" src="images/Instrument-Lease.2png.png" alt=""></div>
-                  </a>
-                  <figcaption><strong><em>DLL Group</em></strong></figcaption>
+              </div>
+              <h3 class="fsprocess-leasingpartner">EMEA Leasing Partners : </h3>
+              <div class="fs-process-lp-container">
+                <a href="https://www.dllgroup.com/" target="_blank" class="fs-process-lp-imagecontainer glasscard w-inline-block"><img src="images/Instrument-Lease.2png.png" loading="lazy" alt="">
+                  <div class="fs-process-lp-imagetext">DLL Group</div>
+                </a>
+                <a href="https://evosciences.com/" target="_blank" class="fs-process-lp-imagecontainer glasscard w-inline-block"><img src="images/Instrument-Lease3.png.jpg" loading="lazy" alt="">
+                  <div class="fs-process-lp-imagetext">EvoScience</div>
+                </a>
+              </div>
+              <div class="fs-process-rtb w-richtext">
+                <h3>Salesforce</h3>
+                <p>Please create a <a href="#" data-w-id="ea53a4ec-6625-b60a-f196-b93e0f549c22">Direct Standard – Instrument Lease</a> opportunity in Salesforce with the naming convention:<br></p>
+                <figure style="max-width:936pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                  <div><img src="images/Instrument-Lease.png" loading="lazy" style="display:none" data-w-id="ea53a4ec-6625-b60a-f196-b93e0f549c28" alt=""></div>
                 </figure>
-                <p>‍</p>
-                <figure style="max-width:227pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                  <a href="https://evosciences.com/" target="_blank" class="w-inline-block">
-                    <div><img loading="lazy" src="images/Instrument-Lease3.png.jpg" alt=""></div>
-                  </a>
-                  <figcaption><strong><em>EvoScience</em></strong></figcaption>
-                </figure>
-                <p>‍</p>
-                <p>Please create a Direct Standard – Instrument Lease opportunity in salesforce. <br>The naming convention is: <strong>System_ Lease_Account_Customer name </strong></p>
-                <figure style="max-width:806pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                  <div><img loading="lazy" src="images/Instrument-Lease.png" alt=""></div>
-                </figure>
-                <p>‍</p>
-                <p>An instrument lease is a standard instrument sale to the leasing company. Therefore there is no record needed in the Quickbase app EMEA Capital Support Management System.</p>
+                <p><strong>&quot;System type_ Lease_Account_Customername&quot;<br>‍</strong></p>
+                <p><em>An instrument lease is a standard instrument sale to the leasing company. Therefore there is no record needed in the Quickbase app EMEA Capital Support Management System.</em><br>‍</p>
+                <h3>Roles and Responsibilities</h3>
               </div>
               <div class="fs-process-embed w-embed">
                 <div id="FS-instrument-lease"></div>
               </div>
             </div>
             <div data-w-tab="Tab 4" class="w-tab-pane">
+              <h3 class="fsprocess-requiredaccess">Required Access</h3>
+              <div class="fs-process-icons-container">
+                <div class="fsprocess-glass">
+                  <a href="https://illumina.lightning.force.com/lightning/page/home" target="_blank" class="glasscard fsprocessglasscard w-inline-block">
+                    <div class="fsprocessiconcontent"><img src="images/image-16_1.png" loading="lazy" alt="" class="sfftimage">
+                      <div class="bodycopy fsprocessicontitle">Salesforce</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="fsprocess-glass">
+                  <a href="https://illumina.quickbase.com/db/main?a=myqb" target="_blank" class="glasscard fsprocessglasscard w-inline-block">
+                    <div class="fsprocessiconcontent"><img src="images/image-23.png" loading="lazy" alt="" class="sfftimage">
+                      <div class="bodycopy fsprocessicontitle">Quickbase</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
               <div class="fs-process-rtb w-richtext">
-                <h2>Sales Loaner / Demo</h2>
-                <p>Please create a Direct Standard – Standard Sale opportunity in salesforce in salesforce. <br>The naming convention is: <strong>System _ SalesLoaner_Account_Customer name</strong></p>
-                <figure style="max-width:804pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
-                  <div><img loading="lazy" src="images/Sales-Loaner.png" alt=""></div>
+                <h3>Salesforce</h3>
+                <p>Please create a <a href="#" data-w-id="248f0928-3572-6774-8750-267bb8eac730">Direct Standard – Standard sale</a> Standard Sale opportunity in salesforce with the naming convention: <br></p>
+                <figure style="max-width:933pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                  <div><img src="images/Sales-Loaner.png" loading="lazy" style="display:none" data-w-id="a2de159f-de7d-7f7b-b222-6d4126a91e6e" alt=""></div>
                 </figure>
-                <p>A sales loaner or sales demo will not require modelling a proposal. For a benchtop sales demo we do require to check if there are already any benchtop demo’s placed within the district, as we cannot place more then 3 in one district. Please contact <a href="#">financialservices@illumina.com</a> to check this for you.</p>
-                <p>‍</p>
-                <p>We always use new instruments for sales loaners/demo’s since the objective of the loaner or demo is for the customer to buy it after the agreed period. You can check with Customer Care to make sure an instrument is available from stock.</p>
-                <p>‍</p>
-                <p>To track and trace Capital Support Products, EMEA maintains the Quickbase app <a href="https://illumina.quickbase.com/db/bq8uqs9c7/fce27b94-a199-4d57-bae5-eadcff635b4b?from=myqb" target="_blank">EMEA Capital Support Management System</a>. For each agreement, a record needs to be created in the app. This will allow us to track all steps in the process and gain approvals. </p>
-                <p><em>Note: We only need 1 record in Quickbase per agreement!</em></p>
-                <p>Editing access is granted to <strong>TAMs</strong>, <strong>Inside Sales</strong> and members of the departments <strong>Quotes</strong>, <strong>Contracts and Finance</strong>. <em>Read Only</em> access is granted to <strong>Sales Specialists</strong>.</p>
-                <p>Please access <a href="https://illumina.box.com/s/gn3bsz07cx0uepkmn0eqohzk50tq0qvr" target="_blank">here</a> for the guide on how to use our <em>EMEA Capital Support Management System.</em></p>
+                <p><strong>&quot;System type_SalesLoaner_Account_Customer name&quot;<br>‍</strong></p>
+                <p><em>A sales loaner or sales demo </em><strong><em>will not require modelling a proposal</em></strong><em>. </em></p>
+                <p>For a benchtop sales demo we do require to check if there are already any benchtop demos placed within the district, as we cannot place more than 3 in one district. Please contact <a href="mailto:financialservices@illumina.com">financialservices@illumina.com</a> to check this for you.</p>
+                <p>We always use new instruments for sales loaners/demos since the objective of the loaner or demo is for the customer to buy it after the agreed period. You can check with <a href="mailto:customercare@illumina.com">Customer Care</a> to make sure an instrument is available from stock.<br>‍</p>
+                <h3>Quickbase</h3>
+                <p>For each agreement, a record needs to be created in <a href="https://illumina.quickbase.com/db/bq8uqs9c7/fce27b94-a199-4d57-bae5-eadcff635b4b?from=myqb">EMEA Capital Support Management System app</a>. This enables visibility of all steps in the process and facilitates obtaining approvals. For more information on how to use the tool, explore <a href="https://illumina.box.com/s/gn3bsz07cx0uepkmn0eqohzk50tq0qvr">this tutorial</a>.<br><br>Editing access is granted to <strong>TAMs</strong>, <strong>Inside Sales</strong> and members of the departments <strong>Quotes</strong>, <strong>Contracts and Finance</strong>. <em>Read Only</em> access is granted to <strong>Sales Specialists</strong>.<br><br><em>Note: We only need 1 record in Quickbase per agreement!<br>‍</em></p>
+                <h3>Roles and Responsibilities</h3>
               </div>
               <div class="fs-process-embed w-embed">
                 <div id="FS-loaner-demo"></div>
@@ -303,7 +356,7 @@
       <div class="footerinfo">
         <div class="homefootertext bodyboldcopy footeremeasaleshub">For Internal Use Only</div>
         <div class="homefootertext bodyboldcopy footerilluminarights">© 2021 Illumina, Inc. All rights reserved.</div>
-        <div class="homefootertext footerupdatedate">Last website update 27 January 2022</div>
+        <div class="homefootertext footerupdatedate">Last website update 2 February 2022</div>
       </div>
     </div>
   </div>
@@ -345,5 +398,12 @@ $(document).scroll(function() {
   <script src="./image-maps/image-map-pro.min.js"></script>
   <script src="./image-maps/fs-intro.js"></script>
   <script src="./image-maps/fs-process.js"></script>
+  <script>
+var hoverLink = document.getElementsByClassName("fs-process-rtb")[0].childNodes[1].childNodes[1]
+var image = document.getElementsById("e91243b7-4eed-2603-da3c-68ed417927d1")
+hoverLink.addEventListener("mouseover", function() {
+  // highlight the mouseover target
+  image.display = "block";
+</script>
 </body>
 </html>
